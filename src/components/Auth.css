@@ -1,0 +1,109 @@
+/* 🔹 FULL SCREEN CENTER */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f6f2f4, #ffe6eb);
+  font-family: Arial, sans-serif;
+}
+
+/* 🔹 LOGIN BOX */
+.auth-box {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 20px;
+  width: 320px;
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* 🔹 TITLE */
+.auth-box h2 {
+  margin-bottom: 20px;
+  color: #e84d6e;
+}
+
+/* 🔹 INPUT FIELDS */
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+
+  border-radius: 10px;
+  border: 1px solid #ddd;
+
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* 🔥 INPUT FOCUS */
+.auth-box input:focus {
+  border-color: #e84d6e;
+  box-shadow: 0 0 6px rgba(232, 77, 110, 0.3);
+}
+
+/* 🔘 BUTTON */
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+
+  border: none;
+  border-radius: 25px;
+
+  background: linear-gradient(135deg, #ff5f7e, #e84d6e);
+  color: white;
+
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* 🔥 HOVER */
+.auth-box button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #e84d6e, #d43c5c);
+}
+
+/* 🔻 CLICK */
+.auth-box button:active {
+  transform: scale(0.95);
+}
+
+/* 🔹 SWITCH TEXT */
+.auth-box p {
+  margin-top: 15px;
+  color: #555;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.auth-box p:hover {
+  color: #e84d6e;
+}
+
+/* ✨ ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 400px) {
+  .auth-box {
+    width: 90%;
+    padding: 25px;
+  }
+}
